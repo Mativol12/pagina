@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>
+Donaciones
+</title>
+<style>
+body {
+background-color:#eea5718c;
+font-size: larger;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewport="0 0 100 100" style="fill:black;font-size:24px;"><text y="20">🔫</text></svg>'), auto;
+background: linear-gradient(135deg, #eea5718c 0%, #ebb98d 50%, #eef2f3 100%);
+background-attachment: fixed;
+margin: 100px;
+height: 100vh;
+}
+.Return {
+border:solid black 3px;
+background-color: #eea5718c;
+color: black;
+width: 200px;
+height: 30px;
+padding: 5px;
+text-align: center;
+border-radius: 20px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+box-shadow: 0px 0px 0px 2px;
+transition: transform 0,3s;
+}
+.Return:hover {
+transform: translateX(+20px);
+box-shadow: 2px 2px 3px 4px;
+}
+h1 {
+padding: 10px;   
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-align: center;
+background-color: burlywood;
+border: black;
+border-radius: 15px;
+}
+</style>
+</head>
+<body>
+<main>
+<section>
+<header>
+<h1>
+Gracias por visitar nuestro apartado para donaciones!
+</h1>
+<br>
+<p>
+En este apartado podras donar a hogares de cuidado que dia tras dia enfocan sus esfuerzos en ayudar a niños y familias vulnerables entre los paises de Myanmar, Palestina, Rusia y Ucrania.
+<br>
+Porfavor rellene la informacion requerida y seleccione el o los hogares a los que desea donar:
+</p>
+</header>
+</section>
+
+<form>
+<section>
+<label for="nombre">Nombre:</label>
+<input type="text" id="nombre" name="nombre" required><br><br>
+</section>
+<section>
+<label for="apellidos">Apellidos:</label>
+<input type="text" id="apellidos" name="apellidos" required><br><br>
+</section>
+<p>
+Ahora, seleccione el pais en donde se encuentre el/los hogares a los que desea donar (solo podra seleccionar uno a la vez, si desea donar a hogares de otro pais porfavor vuelva a ingresar al apartado de donaciones al haber terminado esta donacion):
+</p>
+<br>
+<section>
+<label for="pais">Pais destinatario:</label>
+<select id="pais" name="pais">
+<option value="Palestina"> Palestina</option>
+<option value="Myanmar">Myanmar</option>
+<option value="Rusia">Rusia</option>
+<option value="Ucrania">Ucrania</option>
+</select>
+</section>
+<br><br>
+<section>
+<label>Hogares a los que deseas donar:</label>
+<br><br>
+<input type="checkbox" id="hogar1" name="hogares" value="Hogar 1">
+<label for="hogar1">Hogar Proteccion Infantil</label><br>
+<input type="checkbox" id="hogar2" name="hogares" value="Hogar 2">
+<label for="hogar2">Hogar Refugio Familias</label><br>
+<input type="checkbox" id="hogar3" name="hogares" value="Hogar 3">
+<label for="hogar3">Hogar Refugio Migrante </label><br><br>
+</section>
+
+<section>
+<label for="ubicacion">Dirección IP:</label>
+<input type="text" id="ubicacion" name="ubicacion" placeholder="Ej: 192.168.1.1" required><br><br>
+</section>
+<section>
+<label for="monto">Cantidad a donar($):</label>
+<input type="number" id="monto" name="monto" min="1" required><br><br>
+</section>
+<section>
+<label for="tarjeta">Número de tarjeta:</label>
+<input type="text" id="tarjeta" name="tarjeta" placeholder="**** **** **** ****" required><br><br>
+</section>
+<section>
+<label for="exp">Expiración (MM/AA):</label>
+<input type="text" id="exp" name="exp" placeholder="MM/AA" required><br><br>
+</section>
+<section>
+<label for="cvv">CVV:</label>
+<input type="text" id="cvv" name="cvv" required><br><br>
+</section>
+<section>
+<label for="mensaje">Mensaje (opcional):</label><br>
+<textarea id="mensaje" name="mensaje" placeholder="Deje su mensaje aqui..."  rows="4"></textarea><br><br>
+</section>
+
+<p>
+Como desea aparecer en la lista de donaciones:
+</p>
+<section>
+<input type="radio" id="anonimo" name="identidad" value="anonimo">
+<label for="anonimo">Como Anónimo</label>
+
+<input type="radio" id="con-nombre" name="identidad" value="nombre">
+<label for="con-nombre">Con mi Nombre y Apellidos</label>
+</section>
+<br><br>
+<button type="submit">Donar</button>
+</form>
+</main>
+<br>
+<footer>
+<a class="Return" href="index.html"> Volver a la pagina principal </a>
+</footer>
+<br><br>
+</body>
+</html>
